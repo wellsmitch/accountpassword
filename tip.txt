@@ -3,3 +3,11 @@ git config --global user.name  'userName' //获取当前登录的用户
 git config --global user.email  //获取当前登录用户的邮箱
 
 码云中的管理选项中可以设置  svn 管理代码
+
+android   签名  生成 https://jingyan.baidu.com/article/1876c85296b8e8890b13769e.html
+
+hbuider  文件名为中文时候不能打包  并且基座运行会出错
+
+下载模块 下载模块 http://www.hcoder.net/tutorials/info_104.html
+
+电脑插入耳机检测不到  或者没有声音 https://jingyan.baidu.com/article/5225f26ba85df2e6fa0908d4.html
