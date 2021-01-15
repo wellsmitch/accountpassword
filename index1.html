@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../../JS/jquery.js"></script>
+</head>
+<body>
+<ul></ul>
+<script type="text/javascript">
+    var data = [
+        "    66-",
+        "        661--",
+        "        661--",
+        "            6622---1",
+        "        661--",
+        "            662---",
+        "            662---",
+        "            662---"
+    ];
+    data.forEach(function (ele) {
+        $("ul").append("<li class='toggleIcon'>" + ele.replace(/\s/ig,"&nbsp;") + "</li>")
+    });
+    function getBlankNum(dom) {
+        var countInner = 0;
+        $(dom).text().split('').forEach(function (ele, index) {
+            if (!ele.trim()) {
+                countInner++;
+            }
+        });
+        return countInner
+    }
+    $("ul .toggleIcon").click(function (ev) {
+        var count = getBlankNum(ev.target);
+        var isStart = true;
+        var $nextDom = null;
+        while (isStart) {
+            if($nextDom && $nextDom.length === 1) {
+                $nextDom = $nextDom.next( );
+            }else {
+                $nextDom = $(ev.target).next();
+            }
+            // console.log(getBlankNum($nextDom) , count);
+            if(getBlankNum($nextDom) - count === 4)  {
+                $nextDom.toggle();
+            }else {
+                isStart = false;
+            }
+        }
+    })
+</script>
+</body>
+</html>
