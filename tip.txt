@@ -19,3 +19,11 @@ apicloud 第三方登录网址  https://www.cnblogs.com/jiqing9006/p/6164960.html
 网页第三方登录
 http://qzonestyle.gtimg.cn/qzone/openapi/js-sdk-demo.html
 http://wiki.connect.qq.com/js_sdk%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E#3..E8.87.AA.E5.AE.9A.E4.B9.89.E7.99.BB.E5.BD.95.E6.8C.89.E9.92.AE
+
+
+
+2021-03-24 17:20:36
+
+开发商端首转业务，添加权利人、编辑权利人页面字段是否可编辑控制。
+
+开发商端首转业务，添加权利人、编辑权利人页面字段是否可编辑调整。
